@@ -95,21 +95,13 @@ print(train_data_drugscom.columns)
 print("\nNomi delle colonne nei dati di test di DrugsCom:")
 print(test_data_drugscom.columns)
 
-print(len(X_train_druglib))  # Numero di campioni nel set di addestramento DrugLib
-print(len(X_train_drugscom))  # Numero di campioni nel set di addestramento DrugsCom
-print(len(X_test_druglib))  # Numero di campioni nel set di addestramento DrugLib
-print(len(X_test_drugscom))
-print(len(y_train_druglib))  # Numero di etichette nel set di addestramento DrugLib
-print(len(y_train_drugscom))  # Numero di etichette nel set di addestramento DrugsCom
 # Verifica il numero di colonne (feature) in X_train_bow_druglib
 num_features_train = X_train_bow_druglib.shape[1]
 
 # Verifica il numero di colonne (feature) in X_test_bow_druglib
 num_features_test = X_test_bow_druglib.shape[1]
 
-# Stampa il numero di colonne (feature) in entrambi i set di dati
-print("Numero di feature in X_train_bow_druglib:", num_features_train)
-print("Numero di feature in X_test_bow_druglib:", num_features_test)
+
 
 # Crea un'istanza del modello Random Forest Classifier
 rf_model_dl = RandomForestClassifier(n_estimators=100, max_depth=None, random_state=42)
