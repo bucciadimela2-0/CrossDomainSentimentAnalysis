@@ -6,5 +6,5 @@ Per il funzionamento del progetto, bisogna scaricare i dataset ai seguenti link:
 1. http://archive.ics.uci.edu/dataset/461/drug+review+dataset+druglib+com
 2. http://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com
 
-Basta, far partire il main.py, per far funzionare l'addestramente. 
+Per far funzionare il codice basta far partire il main.py.
 Il file test.py, restituisce la tabella scritta in modo leggibile.
