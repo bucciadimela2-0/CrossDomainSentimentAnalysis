@@ -176,35 +176,3 @@ results_df = pd.DataFrame(results)
 # Stampa la tabella dei risultati
 print(results_df)
 
-
-
-
-"""
-domain_origin = "Depression"
-domain_destination = "Anxiety"
-
-# Filtra i dati per il dominio di origine
-train_data_origin = train_data_drugscom[train_data_drugscom['condition'] == domain_origin]
-test_data_destination = test_data_drugscom[test_data_drugscom['condition'] == domain_destination]
-
-# Addestra il modello RandomForestClassifier sul dominio di origine
-rf_model_origin = RandomForestClassifier(n_estimators=100, max_depth=None, random_state=42)
-X_train_origin = vectorizer_drugscom.transform(train_data_origin['commentsReview'])
-y_train_origin = train_data_origin['sentiment']
-rf_model_origin.fit(X_train_origin, y_train_origin)
-
-# Valuta il modello sul dominio di destinazione
-X_test_destination = vectorizer_drugscom.transform(test_data_destination['commentsReview'])
-y_test_destination = test_data_destination['sentiment']
-y_pred_destination = rf_model_origin.predict(X_test_destination)
-
-# Calcola le metriche di valutazione per il dominio di destinazione
-accuracy_destination = accuracy_score(y_test_destination, y_pred_destination)
-kappa_destination = cohen_kappa_score(y_test_destination, y_pred_destination)
-classification_report_destination = classification_report(y_test_destination, y_pred_destination)
-
-# Stampa le metriche di valutazione
-print(f"Accuracy on {domain_destination}: {accuracy_destination}")
-print(f"Cohen's Kappa on {domain_destination}: {kappa_destination}")
-print(f"Classification Report on {domain_destination}:\n{classification_report_destination}")
-"""
